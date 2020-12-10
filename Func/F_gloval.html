@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+      #main {
+        margin:0 auto; width : 600px; height:200px; border-radius:10px;  position:relative;
+      }
+    #a {
+    width:550px; height:140px; text-align:center;
+    position:absolute; font-size:6em; color:red;
+    left:20px; top: 30px;}
+
+
+     * { margin:0; }a
+     ul, li { list-style:none; }
+     a { color:#fff; text-decoration:underline; }
+     a:hover { color:#000; text-decoration:none; }
+     #wrap{width:100%; height:auto; top:40px; position: relative; }
+     #main_menu{width:100%; height:50px; background:red; margin:1px position:relative;}
+     .gnb{padding:0}
+     .gnb a {width:135px; padding:0 5px 0 5px; display:block; text-decoration:none; }
+     .gnb li { position:relative; float:left; margin-right:11px; margin-left:11px;}
+     .gnb li a { height:50px; text-align:center; line-height:50px; font-size:1.05em;  color:#000; }
+     .gnb  li  a:hover { color:#09f; }
+     .gnb  li  ul { display:none; position:absolute; top:50px; left:0; }
+     .gnb  li:hover ul { display:block; }
+     .gnb li ul a {width:120px; height:35px; background-color:#000; color:#fff; text-align:center; line-height:37px; border-bottom:1px solid #fff; }
+     .gnb li ul a:hover { background-color:#555; }
+     .nav{width:100%; height: auto; background :#FFB3A3; }
+       #pad-1{margin-left: 20px; margin-top: 30px; }
+       #ex-1{margin-left: 30px; color: #616A6B ;}
+       #pad-2{margin-left: 20px; margin-top: 30px;}
+    </style>
+  </head>
+  <body>
+
+    <div id="main">
+     <div id="a">S2CKSHIC</div>
+    </div>
+
+    <div id="wrap">
+       <div id="main_menu">
+         <ul class="gnb">
+           <li><a href="../index.html" title="HOME">HOME</a></li>
+           <li><a href="../C_basis/C_Home.html" title="C언어 기초!!">C언어 기초!!</a>
+             <ul>
+               <li><a href="../C_basis/C_basis.html" title="C언어기초">C언어기초</a></li>
+               <li><a href="../C_basis/C_printf.html" title="printf">pritnf</a></li>
+                <li><a href="../C_basis/C_scanf.html" title="scanf">scanf</a></li>
+                <li><a href="../C_basis/C_Cal.html" title="Calculation">연산자</a></li>
+             </ul>
+           </li>
+           <li><a href="../Control/Control_Home.html" title="제어문">제어문</a><ul>
+             <li><a href="../Control/Control_Home.html" title="자유게시판">제어문 홈</a></li>
+           <li><a href="../Control/Control_if.html" title="자유게시판">if</a></li>
+         <li><a href="../Control/Control_switch.html" title="자유게시판">switch</a></li></ul>
+           </li>
+           <li><a href="../Func/F_Home.html" title="함수">함수</a>
+             <ul>
+                <li><a href="../Func/F_Home.html" title="재귀함수">함수 홈</a></li>
+                <li><a href="../Func/Func.html" title="회원가입">함수기본</a></li>
+                <li><a href="../Func/F_gloval.html" title="회원가입">전역/지역변수</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+            <nav class="nav">
+              <h2>전역 변수 / 지역 변수</h2>
+              <p id="pad-1"> <b>지역 변수</b>는 해당 함수내에서만 유효한 변수이며, <br>
+                              <b>전역 변수</b>는 프로그램 전체영역에서 접근 가능한 변수이다.</p>
+              <p id="ex-1">
+                  #include< stdio.h >
+                  int a=10; // 전역 변수 <br>
+                  int main(){ <br>
+                  &nbsp  int num, b=2; //지역 변수 <br>
+                  &nbsp  scanf("%d",&num); <br>
+                  &nbsp  printf("%d \n %d \n %d \n",a, num, b); <br>
+                  }<br>
+                  <br>
+              </p>
+              <p id="pad-2">
+                전역 변수인 <b>a</b>는 main 함수내에서 선언 되지 않았음에도 printf에서 출력 됐다 <br>
+                지역 변수인 <b>b</b>와 <b>num</b>은 main함수안에서 선언 되어서 출력됐다. <br>
+              </p>
+            </nav>
+
+  </body>
+</html>

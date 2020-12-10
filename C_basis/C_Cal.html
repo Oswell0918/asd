@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+      div{border:1px solid black;}
+      #main {
+        margin:0 auto; width : 600px; height:200px; border-radius:10px;  position:relative;
+      }
+      #a {
+        width:550px; height:140px; text-align:center;
+        position:absolute; font-size:6em; color:red;
+        left:20px; top: 30px;}
+     * { margin:0; }a
+     ul, li { list-style:none; }
+     a { color:#fff; text-decoration:underline; }
+     a:hover { color:#000; text-decoration:none; }
+     #wrap{width:100%; height:auto; top:40px; position: relative; }
+     #main_menu{width:100%; height:50px; background:red; margin:1px position:relative;}
+     .gnb{padding:0}
+     .gnb a {width:135px; padding:0 5px 0 5px; display:block; text-decoration:none; }
+     .gnb li { position:relative; float:left; margin-right:11px; margin-left:11px;}
+     .gnb li a { height:50px; text-align:center; line-height:50px; font-size:1.05em;  color:#000; }
+     .gnb  li  a:hover { color:#09f; }
+     .gnb  li  ul { display:none; position:absolute; top:50px; left:0; }
+     .gnb  li:hover ul { display:block; }
+     .gnb li ul a {width:120px; height:35px; background-color:#000; color:#fff; text-align:center; line-height:37px; border-bottom:1px solid #fff; }
+     .gnb li ul a:hover { background-color:#555; }
+     .nav{width:100%; height: auto; background :#FFB3A3; }
+       #pad-1{margin-left: 20px; margin-top: 30px; }
+       #ex-1{margin-left: 30px; color: #616A6B ;}
+       #pad-2{margin-left: 20px; margin-top: 30px;}
+    </style>
+  </head>
+
+
+  <body>
+    <div id="main">
+     <div id="a">S2CKSHIC</div>
+   </div>
+
+    <div id="wrap">
+       <div id="main_menu">
+         <ul class="gnb">
+           <li><a href="../index.html" title="HOME">HOME</a></li>
+           <li><a href="/C_Home.html" title="C언어 기초!!">C언어 기초!!</a>
+             <ul>
+               <li><a href="./C_basis.html" title="C언어기초">C언어기초</a></li>
+               <li><a href="./C_printf.html" title="printf">pritnf</a></li>
+                <li><a href="./C_scanf.html" title="scanf">scanf</a></li>
+                <li><a href="./C_Cal.html" title="Calculation">연산자</a></li>
+             </ul>
+           </li>
+           <li><a href="../Control/Control_Home.html " title="Control">제어문</a><ul>
+             <li><a href="../Control/Control_Home.html" title="자유게시판">Control 대문</a></li>
+           <li><a href="../Control/Control_if.html" title="자유게시판">if</a></li>
+           <li><a href="../Control/Control_switch.html">switch</li>
+         </ul>
+
+           </li>
+           <li><a href="../Func/F_Home.html" title="함수">함수</a>
+             <ul>
+                <li><a href="../Func/Func.html" title="재귀함수">함수기본</a></li>
+                <li><a href="../Func/F_gloval.html" title="회원가입">전역변수</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="nav">
+          <h2>printf 문</h2>
+          <p id="pad-1"> 연산자는 크게 대입 연산자와 산술 연산자로 나눌 수 있다. <br>
+          대입 연산자는 '=' 으로 대표 되며,  <br>
+          산술 연산자는 (+, - , * , /, %) 등으로 설명 가능하다. <br>
+          </p>
+          <p id="ex-1">예제) <br>
+            #include< stdio.h > <br>
+            &nbsp  int main(){ <br>
+            &nbsp &nbsp    int a=3; <br>
+            &nbsp &nbsp &nbsp      a=a*3; <br>
+            &nbsp &nbsp &nbsp      printf("%d \n",a); <br>
+            &nbsp &nbsp &nbsp      a=a-3; <br>
+            &nbsp &nbsp &nbsp      printf("%d \n",a); <br>
+            &nbsp &nbsp &nbsp      a=a/3; <br>
+            &nbsp &nbsp &nbsp       printf("%d \n",a); <br>
+            &nbsp &nbsp &nbsp      a=a%3; <br>
+            &nbsp &nbsp &nbsp      printf("%d \n",a); <br>
+            &nbsp &nbsp &nbsp      return 0; <br>
+            &nbsp  } <br>
+
+          </p>
+          <p id="pad-2"> 이 코드를 실행 하면, <br>
+            정수 a는 3에서 대입 연산자로 우측에 있는 산술 연산자에 의해 <br>
+             <b>곱해지고'*' 빼지고'-' 나눠지고'/' 나눈 값의 나머지'%'</b> 를 <br>
+             printf에 의해 출력 된다. <br>
+          </p>
+        </nav>
+
+  </body>
+</html>
